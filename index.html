@@ -6,50 +6,62 @@
     <title>learning html</title>
 </head>
 <body>
-    <p>This is a paragraph.</p>
-    <img src="#" alt="Description of image">
-    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
-    <p>This text is <br><strong>important</strong>.</p>
+    <div class="paragraph">
+        <p>This is a <span style="background-color: yellow;">paragraph.</span></p>
+        <p>This text is <br><strong>important</strong>.</p>
+    </div>
+    <div class="image">
+        <img src="#" alt="Description of image">
+    </div>
+    <div class="link">
+        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    </div>
+    <div class="text">
     <em>This text is emphasized.</em>
-    <pre>This text is preformatted.</pre>
-    <sub>This text is subscripted.</sub>
-    <sup>This text is superscripted.</sup>
-
+        <pre>This text is preformatted.</pre>
+        <sub>This text is subscripted.</sub>
+        <sup>This text is superscripted.</sup>
+    </div>
     <hr>
-    <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-    </ul>
+    <div class="list">
+        <ul>
+            <li>Item one</li>
+            <li>Item two</li>
+        </ul>
+    </div>
     <hr>
-    <ol>
-        <li>First item</li>
-        <li>Second item</li>
-    </ol>
+    <div class="list">
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+        </ol>
+    </div>
     <hr>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-    </dl>
+    <div class="definition">
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </div>
     <hr>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Alice</td>
-            <td>30</td>
-        </tr>
-    </table>
-    <hr>
-    <form action="/index.html" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </div>
+    <div class="form">
+        <form action="/index.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <hr>
 </body>
 
