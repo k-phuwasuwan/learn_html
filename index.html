@@ -23,21 +23,21 @@
         <sup>This text is superscripted.</sup>
     </div>
     <hr>
-    <div class="list">
+    <div class="unordered"><h4>unordered list</h4>
         <ul>
             <li>Item one</li>
             <li>Item two</li>
         </ul>
     </div>
     <hr>
-    <div class="list">
-        <ol>
+    <div class="ordered"><h4>ordered list</h4>
+        <ol type="I">
             <li>First item</li>
             <li>Second item</li>
         </ol>
     </div>
     <hr>
-    <div class="definition">
+    <div class="definition"><h4>definition list</h4>
         <dl>
             <dt>HTML</dt>
             <dd>HyperText Markup Language</dd>
@@ -46,14 +46,58 @@
         </dl>
     </div>
     <hr>
-    <div class="table">
+    <div class="nested"><h4>nested list</h4>
+        <ol>
+            <li>Step 1
+                <ol>
+                    <li>Sub-step 1a</li>
+                    <li>Sub-step 1b</li>
+                </ol>
+            </li>
+            <li>Step 2
+                <ol>
+                    <li>Sub-step 2a</li>
+                    <li>Sub-step 2b</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <hr>
+    <div class="table"><h4>table</h4>
+        <table style="border: 1px solid black">
+            <caption style="border: 1px solid black">My Table</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" style="border: 1px solid black">Name</th>
+                    <th style="border: 1px solid black">Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid black">
+                    <td style="border: 1px solid black">Ice</td>
+                    <td style="border: 1px solid black">/Kan</td>
+                    <td style="border: 1px solid black">20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ratione?</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
         <table>
             <tr>
                 <th>Name</th>
+                <td>Ice</td>
+            </tr>
+            <tr>
                 <th>Age</th>
+                <td>20</td>
             </tr>
         </table>
     </div>
+    <hr>
     <div class="form">
         <form action="/index.html" method="post">
             <label for="username">Username:</label>
