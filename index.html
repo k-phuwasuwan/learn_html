@@ -6,12 +6,41 @@
     <title>learning html</title>
 </head>
 <body>
-    <div class="paragraph">
-        <p>This is a <span style="background-color: yellow;">paragraph.</span></p>
-        <p>This text is <br><strong>important</strong>.</p>
-    </div>
-    <div class="image">
-        <img src="#" alt="Description of image" height="100" width="100">
+
+        <nav class="menu" style="border-bottom: 1px solid black;">
+            <ul style="list-style-type: none;">
+                <li style="display: inline-block;"><a href="#">Home</a></li>
+                <li style="display: inline-block;"><a href="#">About</a></li>
+                <li style="display: inline-block;"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    <header>
+        <h1>HTML</h1>
+        <p>start HTML</p>
+    </header>
+
+    <article> <!-- ใช้กับเนื้อหาที่ตัดแบ่งออกไปแล้วยังอ่านรู้เรื่อง 100% -->
+        <div class="paragraph">
+            <p>This is a <span style="background-color: yellow;">paragraph.</span></p>
+            <p>This text is <br><strong>important</strong>.</p>
+        </div>
+        <div class="image">
+            <img src="/1.jpg"" alt="Description of image" height="100" width="100">
+        </div>
+    </article>
+
+    <section> <!-- ส่วนประกอบของเนื้อหา -->
+        <p>Lorem ipsum dolor sit.</p>
+        <aside>Lorem ipsum dolor sit amet consectetur adipisicing.</aside>
+    </section>
+
+    <hr>
+    <div class="figure">
+        <figure>
+            <img src="/1.jpg" alt="Elephant at sunset" height="100" width="100"/>
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing.</figcaption>
+        </figure>
     </div>
     <div class="audio">
         <audio src="#">this is audio tag</audio>
@@ -152,6 +181,25 @@
     <label for="password">input password: </label>
     <input id="password" type="password">
     <br>
+    <hr>
+    <!-- Semantic Markup -->
+    <h1>Semantic Markup</h1>
+    <blockquote>
+        There is <del>nothing</del> <ins>no code</ins> either good or bad, but
+        <del>thinking</del> <ins>running it</ins> makes it <s>so.</s>
+    </blockquote>
+    <p>My favorite color is <s>blue</s> red.</p>
+    <q>this is double quote</q>
+    <p>Contact the author of this page:</p>
     
+    <address>
+        <a href="mailto:jim@example.com">jim@example.com</a><br />
+        <a href="tel:1234567890">1234567890</a>
+    </address>
+    <dfn></dfn>
+    <br>
+    <footer style="background-color: aqua; padding: 5px;">
+        <p style="text-align: center;">Lorem ipsum dolor sit amet.</p>
+    </footer>
 </body>
 </html>
